@@ -6,13 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --cache --fix --ext .js",
-    "check": "node config/eslintCheck.js"
+    "check": "node config/eslintCheck.js",
+    "release": "release-it"
   },
   "author": "",
   "license": "ISC",
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && npm run check"
+      "pre-commit2": "lint-staged && npm run check"
     }
   },
   "lint-staged": {
@@ -25,12 +26,14 @@
     "tslib": "^1.11.1"
   },
   "devDependencies": {
+    "@release-it/conventional-changelog": "^5.0.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-prettier": "^3.1.2",
     "husky": "^4.3.0",
     "lint-staged": "^10.0.8",
-    "prettier": "^2.1.2"
+    "prettier": "^2.1.2",
+    "release-it": "^15.1.1"
   }
 }
