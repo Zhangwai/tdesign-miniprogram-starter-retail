@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --cache --fix --ext .js",
     "check": "node config/eslintCheck.js",
-    "release": "release-it"
+    "release": "release-it",
+    "upload": "node ./config/upload.wx.js"
   },
   "author": "",
   "license": "ISC",
@@ -23,7 +24,8 @@
   "dependencies": {
     "dayjs": "^1.9.3",
     "tdesign-miniprogram": "^0.7.1",
-    "tslib": "^1.11.1"
+    "tslib": "^1.11.1",
+    "miniprogram-ci": "^1.1.6"
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^5.0.0",
